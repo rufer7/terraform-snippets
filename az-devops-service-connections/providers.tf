@@ -6,5 +6,5 @@ provider "azuread" {
 # If you still use PAT authentication, make sure you don't hardcode the PAT and don't commit it to your source code repository!
 provider "azuredevops" {
   org_service_url       = var.organization_url
-  personal_access_token = "VALID_PAT_HERE" # PAT with scopes Project and Team "Read, write & manage"; Code "Read, write & manage"; Service Connections "Read, query, & manage"
+  personal_access_token = var.personal_access_token
 }
